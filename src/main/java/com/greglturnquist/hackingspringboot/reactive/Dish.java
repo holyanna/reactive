@@ -1,5 +1,8 @@
 package com.greglturnquist.hackingspringboot.reactive;
 
+import lombok.Data;
+
+@Data
 public class Dish {
     private String description;
     private boolean delivered = false;
@@ -12,18 +15,6 @@ public class Dish {
 
     Dish(String description) {
         this.description = description;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public boolean isDelivered() {
-        return delivered;
     }
 
     @Override
